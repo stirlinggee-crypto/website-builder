@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stigee – Website Builder</title>
+
+  <!-- LINK CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <button class="toggle" onclick="toggleDark()">🌙</button>
+    <h1>Stigee Website Builder</h1>
+    <p>Turn your idea into a real website</p>
+  </header>
+
+  <main>
+    <form class="card" id="ideaForm"
+          action="https://formspree.io/f/xgvgbkle"
+          method="POST">
+
+      <label>
+        Email
+        <input type="email" name="Email" required>
+      </label>
+
+      <label>
+        Your idea
+        <textarea name="Message" required></textarea>
+      </label>
+
+      <label>
+        Due date
+        <input type="date" name="Due date">
+      </label>
+
+      <button class="submit" type="submit">Submit Idea 🚀</button>
+      <div class="message" id="formMessage"></div>
+    </form>
+  </main>
+
+  <footer>
+    © 2025 Stigee · 
+  </footer>
+
+  <!-- LINK JS -->
+  <script src="script.js"></script>
+</body>
+</html>
